@@ -1,0 +1,1 @@
+module.exports = 'mongodb://heroflow:heroflow@ds047591.mongolab.com:47591/herodb?connectTimeoutMS=500000';
