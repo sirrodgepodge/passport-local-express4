@@ -1,4 +1,4 @@
-## User Authentication With Passport and Express 4
+# User Authentication With Passport and Express 4
 
 View the blog post here: http://mherman.org/blog/2015/01/31/local-authentication-with-passport-and-express-4
 
@@ -7,3 +7,7 @@ In order to get a working sample local authentication site up and running do the
 1. Run "mongod" in a terminal.
 2. Open another terminal and from within the "passportLocalExpress4Example" application run "npm start".
 3. Open a browser and go to "localhost:3000"
+
+In order to change the database being used, simply change the connection string in /models/dbString
+
+Enjoy! :)
