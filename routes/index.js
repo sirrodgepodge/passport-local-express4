@@ -24,6 +24,23 @@ router.post('/register', function(req, res) {
     });
 });
 
+router.get('/addVids', function(req, res) {
+	if(req.user==="heroflow"){
+	    res.render('addVids', {});
+	}
+});
+
+router.post('/addVids', function(req, res) {
+	Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
+		if (err) {
+		    return res.render("register", {info: "Sorry. That username already exists. Try again."});
+		}
+
+		passport.authenticate('local')(req, res, function () {
+			res.redirect('/');
+		    });
+	    });
+    });
 
 router.get('/login', function(req, res) {
     res.render('login', { user : req.user });

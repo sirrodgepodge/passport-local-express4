@@ -1,16 +1,16 @@
 {
-  "name": "passport-local-express4",
+  "name": "passportLocalExpress4Example",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./bin/www.js",
     "test": "make test"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:mjhea0/passport-local-express4.git"
   },
-  "author": "Michael Herman <michael@mherman.org>",
+  "author": "Sir Rodge <rwcbeaman@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "*",
