@@ -1,3 +1,6 @@
+// MongoDB connection string
+var connStr = require('./models/dbString');
+
 // dependencies
 var express = require('express');
 var path = require('path');
@@ -43,7 +46,7 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 // mongoose
-mongoose.connect('mongodb://localhost/passport_local_mongoose_express4');
+mongoose.connect(connStr);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
